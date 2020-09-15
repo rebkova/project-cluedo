@@ -200,9 +200,11 @@ const randomSelector = (array) => {
 // With a killer, a weapon and a room.
 // The values will be set later.
 
-// const mystery = {
-
-// };
+const mysteryObject = {
+  killer: "",
+  weapon: "",
+  room: ""
+};
 
 // This function will be invoked when you click on the killer card.
 const pickKiller = () => {
@@ -219,7 +221,7 @@ const pickKiller = () => {
   ).innerHTML = `${mystery.killer.firstName} ${mystery.killer.lastName}`;
 
   //prints out the picked killer in the DOM
-  document.getElementById("mystery").innerHTML = `The picked killer is ${mystery.killer.firstName} ${mystery.killer.lastName}.`;
+  //document.getElementById("mystery").innerHTML = `The picked killer is ${mystery.killer.firstName} ${mystery.killer.lastName}.`;
 };
 //on click, the function will be invoked
 document.getElementById("killerCard").onclick = pickKiller;
@@ -235,7 +237,7 @@ const pickWeapon = () => {
   document.getElementById("weaponName").innerHTML = `${mystery.weapon.name}`;
 
   //prints out the picked weapon in the DOM
-  document.getElementById("mystery").innerHTML = `The picked weapon is ${mystery.weapon.name}.`;
+  //document.getElementById("mystery").innerHTML = `The picked weapon is ${mystery.weapon.name}.`;
   
 };
 //on click, the function will be invoked
@@ -249,13 +251,18 @@ const pickRoom = () => {
   document.getElementById("roomName").innerHTML = `${mystery.room}`;
 
   //prints out the picked weapon in the DOM
-  document.getElementById("mystery").innerHTML = `The picked room is ${mystery.room}.`;
+  //document.getElementById("mystery").innerHTML = `The picked room is ${mystery.room}.`;
 };
 //on click, the function will be invoked
 document.getElementById("roomCard").onclick = pickRoom;
 
 
 
-
 // STEP 4 - CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:
 // 'The murder was committed by Jacob Green, in the living room with a rope.'
+const revealMystery = () => {
+  document.getElementById("mystery").innerHTML = `The murder was commited 
+  by ${mystery.killer.firstName} ${mystery.killer.lastName}, in the ${mystery.room} with a ${mystery.weapon.name}`;
+};
+//on click, the function will be invoked 
+document.getElementById("revealButton").onclick = revealMystery;
