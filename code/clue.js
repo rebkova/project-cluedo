@@ -9,7 +9,7 @@ const mrGreen = {
   image: "assets/green.png",
   occupation: "Entrepreneur",
 };
-console.log(`Description of Mr Green: ${mrGreen.description}.`);
+// console.log(`Description of Mr Green: ${mrGreen.description}.`);
 
 const mrsWhite = {
   firstName: "Elisabeth",
@@ -68,12 +68,14 @@ const rope = {
   name: "rope",
   weight: 10,
 };
-console.log(`Rope weight (unit unknown): ${rope.weight}`);
+//console.log(`Rope weight (unit unknown): ${rope.weight}`);
 
 const knife = {
   name: "knife",
   weight: 6,
 };
+//console.log(`Item ${knife.name} with weight ${knife.weight}`);
+
 const candlestick = {
   name: "candlestick",
   weight: 12,
@@ -112,16 +114,32 @@ const pistol = {
 // THE ROOMS ONLY HAVE A NAME SO NO NEED FOR OBJECTS THERE.
 
 // NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS LIKE THIS:
+//array of objects
 const suspects = [
 mrGreen,
 mrsWhite,
 profPlum,
 missScarlet,
 mrsPeacock,
-colonelMustard - Jack Mustard,
+colonelMustard
 ];
-//can they be duplicated?
+// console.log(`Array of suspects as objects: ${suspects}.`); //object object 
 
+//array of strings
+const suspectsArray = [
+"Mr Green",
+"Professor Plum",
+"Miss Scarlet", 
+"Mrs Peacock",
+"Colonel Mustard",
+"Mrs White"
+];
+// console.log(`Array of suspects as strings: ${suspectsArray}`);
+// console.log(`Third suspect in the array: ${suspectsArray[2]}.`);
+//console.log(`Last suspect in the array: ${suspectsArray[suspectsArray.length-1]}.`);
+
+
+//array of objects
 const weapons = [
 rope,
 knife,
@@ -133,7 +151,24 @@ bat,
 trophy,
 pistol
 ];
+// console.log(`Array of weapons as objects: ${weapons}.`);
 
+//array of strings
+const weaponsArray = [
+"Rope",
+"Knife",
+"Candlestick",
+"Dumbbell",
+"Poison",
+"Axe",
+"Bat",
+"Trophy",
+"Pistol"
+];
+// console.log(`Array of weapons as strings: ${weaponsArray}.`);
+// console.log(`Last weapon in the array: ${weaponsArray[weaponsArray.length -1]}`)
+
+//array of strings
 const rooms = [
 "Dining Room", 
 "Conservatory", 
@@ -151,6 +186,8 @@ const rooms = [
 "Guest House", 
 "Patio"
 ];
+// console.log(`Array of rooms: ${rooms}.`);
+// console.log(`Last room in the array: ${rooms[rooms.length-1]}.`);
 
 // THIS FUNCTION WILL RANDOMLY SELECT ONE ITEM FROM THE ARRAY THAT YOU PASS IN TO THE FUNCTION.
 // YOU DON'T NEED TO CHANGE THIS, JUST TRY TO UNDERSTAND IT. AND HOW TO USE IT.
