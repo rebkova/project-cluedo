@@ -70,6 +70,45 @@ const rope = {
 };
 console.log(`Rope weight (unit unknown): ${rope.weight}`);
 
+const knife = {
+  name: "knife",
+  weight: 6,
+};
+const candlestick = {
+  name: "candlestick",
+  weight: 12,
+};
+
+const dumbbell = {
+  name: "dumbbell",
+  weight: 25,
+};
+
+const poison = {
+  name: "poison",
+  weight: 3,
+};
+
+const axe = {
+  name: "axe",
+  weight: 17,
+};
+
+const bat = {
+  name: "bat",
+  weight: 12,
+};
+
+const trophy = {
+  name: "trophy",
+  weight: 15,
+};
+
+const pistol = {
+  name: "pistol",
+  weight: 8,
+};
+
 // THE ROOMS ONLY HAVE A NAME SO NO NEED FOR OBJECTS THERE.
 
 // NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS LIKE THIS:
@@ -84,15 +123,15 @@ colonelMustard - Jack Mustard,
 //can they be duplicated?
 
 const weapons = [
-"Rope",
-"Knife",
-"Candlestick",
-"Dumbbell",
-"Poison",
-"Axe",
-"Bat",
-"Trophy",
-"Pistol"
+rope,
+knife,
+candlestick,
+dumbbell,
+poison,
+axe,
+bat,
+trophy,
+pistol
 ];
 
 const rooms = [
