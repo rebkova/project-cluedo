@@ -1,6 +1,34 @@
 body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
+  background-image: url(./assets/pexels-pixabay-279857.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+header {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.header-div {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-text {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
 }
 
 p {
@@ -13,7 +41,7 @@ p {
   margin: 50px auto;
   width: 90%;
   height: 600px;
-  background: #ccc;
+  background: transparent;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,6 +56,11 @@ p {
   border-radius: 16px;
 }
 
+.killer-deck:hover {
+  box-shadow: 0 8px 16px 0 rgba(247, 243, 243, 0.411);
+  cursor: pointer;
+}
+
 .weapon-deck {
   width: 250px;
   height: 400px;
@@ -37,14 +70,33 @@ p {
   border-radius: 16px;
 }
 
+.weapon-deck:hover {
+  box-shadow: 0 8px 16px 0 rgba(247, 243, 243, 0.411);
+  cursor: pointer;
+}
+
 .room-deck {
   width: 250px;
   height: 400px;
   background: midnightblue;
-
   text-align: center;
   padding-top: 30px;
   border-radius: 16px;
+}
+.room-deck:hover {
+  box-shadow: 0 8px 16px 0 rgba(247, 243, 243, 0.411);
+  cursor: pointer;
+}
+
+.mystery-reveal {
+  width: 90%;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 button {
@@ -55,4 +107,27 @@ button {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
+  margin-top: 60px;
+}
+
+button:hover { 
+  box-shadow: 0 8px 16px 0 rgba(247, 243, 243, 0.411);
+  cursor: pointer;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  margin-top: 60px;
+  padding: 25px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+footer p {
+  background-color: inherit;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.555);
 }

@@ -65,49 +65,49 @@ const colonelMustard = {
 // CREATE OBJECTS FOR ALL THE WEAPONS, ADD MORE CHARACTERISTICS TO THE WEAPONS IF YOU LIKE.
 
 const rope = {
-  name: "rope",
+  name: "a rope",
   weight: 10,
 };
 //console.log(`Rope weight (unit unknown): ${rope.weight}`);
 
 const knife = {
-  name: "knife",
+  name: "a knife",
   weight: 6,
 };
 //console.log(`Item ${knife.name} with weight ${knife.weight}`);
 
 const candlestick = {
-  name: "candlestick",
+  name: "a candlestick",
   weight: 12,
 };
 
 const dumbbell = {
-  name: "dumbbell",
+  name: "a dumbbell",
   weight: 25,
 };
 
 const poison = {
-  name: "poison",
+  name: "a poison",
   weight: 3,
 };
 
 const axe = {
-  name: "axe",
+  name: "an axe",
   weight: 17,
 };
 
 const bat = {
-  name: "bat",
+  name: "a bat",
   weight: 12,
 };
 
 const trophy = {
-  name: "trophy",
+  name: "a trophy",
   weight: 15,
 };
 
 const pistol = {
-  name: "pistol",
+  name: "a pistol",
   weight: 8,
 };
 
@@ -216,9 +216,10 @@ const pickKiller = () => {
   document.getElementById("killerCard").style.background = mystery.killer.color;
 
    //and show the full name of the killer. Feel free to add more things to show about the killer.
-  document.getElementById(
-    "killerName"
-  ).innerHTML = `${mystery.killer.firstName} ${mystery.killer.lastName}`;
+  document.getElementById("killerName").innerHTML = `${mystery.killer.firstName} ${mystery.killer.lastName}`;
+  document.getElementById("killerAge").innerHTML = `${mystery.killer.age} years`;
+  document.getElementById("killerImage").src = `${mystery.killer.image}`;
+
 
   //prints out the picked killer in the DOM
   //document.getElementById("mystery").innerHTML = `The picked killer is ${mystery.killer.firstName} ${mystery.killer.lastName}.`;
@@ -262,7 +263,7 @@ document.getElementById("roomCard").onclick = pickRoom;
 // 'The murder was committed by Jacob Green, in the living room with a rope.'
 const revealMystery = () => {
   document.getElementById("mystery").innerHTML = `The murder was commited 
-  by ${mystery.killer.firstName} ${mystery.killer.lastName}, in the ${mystery.room} with a ${mystery.weapon.name}`;
+  by ${mystery.killer.firstName} ${mystery.killer.lastName}, in the ${mystery.room} with ${mystery.weapon.name}.`;
 };
 //on click, the function will be invoked 
 document.getElementById("revealButton").onclick = revealMystery;
