@@ -47,13 +47,65 @@ p {
   align-items: center;
 }
 
+/* .loading-bar {
+  width: 200px;
+  height: 3em; em best for media query - want height of a loading bar to scale with the text inside of it
+  background-color: yellowgreen;
+  border-radius: 0.75em;
+  color: brown;
+  position: relative;
+} */
+
+ /* .loading-bar::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  bottom: 0.5em;
+  width: calc(var(--width, 0)* 1%); tlele mi vse sfrka - da v stolpec, ne v vrstico
+  min-width: 2rem; show small progress bar at the beginning instead of nothing
+  max-width: calc(100% - 0.5em);
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+} 
+*/
+
+.card-back {
+  width: inherit;
+}
+
+.card-name {
+  color: rgba(255, 255, 255, 0.616);
+  background: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.loading-bar {
+  color: black;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.card-info {
+  /* display: none; */
+}
+
 .killer-deck {
   width: 250px;
   height: 400px;
-  background: #000;
+  background: rgb(58, 58, 58);
   text-align: center;
   padding-top: 30px;
   border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .killer-deck:hover {

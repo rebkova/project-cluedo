@@ -238,14 +238,14 @@ const pickKiller = () => {
 
 
   // This will change the background color of the card to the one connected to the chosen killer
-  document.getElementById("killerCard").style.background = mysteryObject.killer.color;
+  document.getElementById("killerCard").style.background = mysteryObject.killer.color; //why don't we need ${} here - because I already have a string I can print out
 
-  //and show the full name of the killer. Feel free to add more things to show about the killer.
-  document.getElementById("killerName").innerHTML = `${mysteryObject.killer.firstName} ${mysteryObject.killer.lastName}`;
+  //and show the properties of the killer
+  document.getElementById("killerName").innerHTML =`${mysteryObject.killer.firstName} ${mysteryObject.killer.lastName}`; //here I am composing a string
   document.getElementById("killerAge").innerHTML = `${mysteryObject.killer.age} years`;
-  document.getElementById("killerImage").src = `${mysteryObject.killer.image}`;
-  document.getElementById("killerOccupation").innerHTML = `${mysteryObject.killer.occupation}`;
-  document.getElementById("killerDescription").innerHTML = `${mysteryObject.killer.description}`;
+  document.getElementById("killerImage").src = mysteryObject.killer.image;
+  document.getElementById("killerOccupation").innerHTML = mysteryObject.killer.occupation;
+  document.getElementById("killerDescription").innerHTML = mysteryObject.killer.description;
   // document.getElementById("favouriteWeapon").innerHTML = `Favourite weapon: ${mysteryObject.killer.favouriteWeapon}`;
 
 
@@ -263,7 +263,8 @@ const pickWeapon = () => {
   mysteryObject.weapon = randomSelector(weapons);
 
   //display weapon on the card
-  document.getElementById("weaponName").innerHTML = `${mysteryObject.weapon.name}`;
+  document.getElementById("weaponName").innerHTML = mysteryObject.weapon.name;
+  document.getElementById("weaponWeight").innerHTML = `Weight: ${mysteryObject.weapon.weight}`;
 
   //prints out the picked weapon in the DOM
   //document.getElementById("mystery").innerHTML = `The picked weapon is ${mysteryObject.weapon.name}.`;
@@ -277,7 +278,7 @@ const pickRoom = () => {
   mysteryObject.room = randomSelector(rooms);
 
   //display picked room on a card
-  document.getElementById("roomName").innerHTML = `${mysteryObject.room}`;
+  document.getElementById("roomName").innerHTML = mysteryObject.room;
 
   //prints out the picked weapon in the DOM
   //document.getElementById("mystery").innerHTML = `The picked room is ${mystery.room}.`;
@@ -301,7 +302,7 @@ document.getElementById("shuffleButton").onclick = shuffleFavouriteWeapon;
 // 'The murder was committed by Jacob Green, in the living room with a rope.'
 const revealMystery = () => {
   document.getElementById("mystery").innerHTML = `The murder was commited 
-  by ${mysteryObject.killer.firstName} ${mysteryObject.killer.lastName}, in the ${mysteryObject.room} with ${mysteryObject.weapon.name}.`;
+  by ${mysteryObject.killer.firstName} ${mysteryObject.killer.lastName} with ${mysteryObject.weapon.name} in the ${mysteryObject.room}.`;
 };
 //on click, the function will be invoked 
 document.getElementById("revealButton").onclick = revealMystery;
