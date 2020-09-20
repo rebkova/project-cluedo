@@ -138,6 +138,7 @@ h1 {
   text-align: center;
 }
 
+/**BUTTON**/
 button {
   padding: 8px 16px;
   background: #0D0D0D;
@@ -160,6 +161,7 @@ button:hover {
   color: #0D0D0D;
 }
 
+/**FOOTER**/
 footer {
   background: black;
   text-align: center;
