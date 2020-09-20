@@ -1,19 +1,16 @@
 body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
-  background-image: url(./assets/pexels-pixabay-279857.jpg);
-  background-size: cover;
-  background-position: bottom;
+  background-color: #595959;
 }
 
 header {
-  height: 30vh;
   display: flex;
   justify-content: center;
 }
 
 .header-div {
-  color: #fff;
+  color: #F2F2F2;
   font-size: 35px;
   font-weight: bold;
   width: 80%;
@@ -24,38 +21,59 @@ header {
 
 .header-text {
   background-color: transparent;
-  color: white;
+  color: #F2F2F2;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
   padding: 10px;
 }
 
+.instruction-text {
+  color: #F2F2F2;
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+}
+
 .cards p {
   margin: 1px;
   font-weight: 500;
   background-color: inherit;
-  color: white;
-  font-size: 28px;
+  color: #F2F2F2;
+  font-size: 18px;
 }
 
 .cards {
-  margin: 50px auto;
+  margin: 35px auto;
   width: 90%;
   height: 600px;
-  background: transparent;
+  background: #A6A6A6;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+/**KILLER DECK**/
 .killer-deck {
   width: 250px;
   height: 400px;
-  background: #000;
+  background: #262626;
   text-align: center;
   padding-top: 30px;
   border-radius: 16px;
+  border: 1px solid #A6A6A6;
+}
+
+.killer-deck :first-of-type {
+  font-size: 28px;
+  font-weight: 800;
+  color: #F2F2F2;
+  background-color: #A6A6A6;
+}
+
+.killer-deck p {
+  color: #262626;
+  font-weight: 800; 
 }
 
 .killer-deck:hover {
@@ -63,13 +81,22 @@ header {
   cursor: pointer;
 }
 
+
+/**WEAPON DECK**/
 .weapon-deck {
   width: 250px;
   height: 400px;
-  background: rgb(10, 53, 10);
+  background: #262626;
   text-align: center;
   padding-top: 30px;
   border-radius: 16px;
+  border: 1px solid #A6A6A6;
+}
+
+.weapon-deck :first-of-type {
+  font-size: 28px;
+  font-weight: 800;
+  background-color: #A6A6A6;
 }
 
 .weapon-deck:hover {
@@ -77,14 +104,24 @@ header {
   cursor: pointer;
 }
 
+
+/**ROOM DECK**/
 .room-deck {
   width: 250px;
   height: 400px;
-  background: midnightblue;
+  background: #262626;
   text-align: center;
   padding-top: 30px;
   border-radius: 16px;
+  border: 1px solid #A6A6A6;
 }
+
+.room-deck :first-of-type {
+  font-size: 28px;
+  font-weight: 800;
+  background-color: #A6A6A6;
+}
+
 .room-deck:hover {
   box-shadow: 0 8px 16px 0 rgba(247, 243, 243, 0.411);
   cursor: pointer;
@@ -103,9 +140,13 @@ h1 {
 
 button {
   padding: 8px 16px;
-  background: crimson;
+  background: #0D0D0D;
+  color: #A6A6A6;
   border: none;
   font-size: 20px;
+  font-weight: 500;
+  background: #0D0D0D;
+  color: #A6A6A6;
   border-radius: 8px;
   display: block;
   margin: 0 auto;
@@ -115,6 +156,8 @@ button {
 button:hover { 
   box-shadow: 0 8px 16px 0 rgba(247, 243, 243, 0.411);
   cursor: pointer;
+  background: #A6A6A6;
+  color: #0D0D0D;
 }
 
 footer {
@@ -131,9 +174,10 @@ footer {
 footer p {
   background-color: inherit;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.555);
+  color: #A6A6A6;
 }
 
-a:link {
+a:link, a:visited {
   color: #A6A6A6;
+  text-decoration: underline;
 }
