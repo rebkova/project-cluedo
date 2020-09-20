@@ -1,13 +1,20 @@
 # Cluedo - Mystery Randomizer
 
-Replace this readme with your own information about your project.
+The aim of this week's project was to pick a mystery for a Cluedo board game.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We had to randomly pick a card from three different decks and display the mystery, which included information from each card picked.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started off by doing all the steps described in the project brief and once they were finished, I started sketching the design of the webpage.
+ 
+I used icons8 website to get the favicon and Adobe color to pick a color palette.
+
+If I had more time, I would style the website more thoroughly and implement few more functions: 
+- one that would display an error mesage if not all 3 cards were picked at the same time 
+- one to reset the webpage and start over
+- add a loading animation.
+
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://cluedo-mystery-picker.netlify.app/
